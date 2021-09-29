@@ -123,16 +123,21 @@ header img {
   padding-left: 0.7em;
   padding-bottom: 0.5em;
 }
-.restaurant-carte__description h3 {
-  margin: 0;
-}
 .restaurant-carte__description i {
   position: relative;
-  margin-left: 17em;
-  bottom: 1.2em;
+  margin-left: 12em;
+  bottom: 0.6em;
+  font-size: 1.5em;
 }
 .restaurant-carte__description p {
   margin-top: 0;
+  line-height: 10%;
+}
+.restaurant-carte__titre1 {
+  margin: 0;
+}
+.restaurant-carte__titre2 {
+  margin-bottom: 0;
 }
 .restaurant-carte a {
   text-decoration: none;
@@ -159,6 +164,7 @@ footer i {
   font-size: 0.6em;
 }
 
+/* Responsive tablette */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   header img {
     width: 35%;
@@ -190,11 +196,15 @@ footer i {
   .restaurant-carte {
     width: 45%;
   }
+  .restaurant-carte__description i {
+    margin-left: 11em;
+  }
 
   footer {
     text-align: center;
   }
 }
+/* Responsive desktop */
 @media only screen and (min-width: 1025px) {
   header img {
     width: 25%;
@@ -228,8 +238,8 @@ footer i {
   .restaurant-carte__nouveau {
     right: -12em;
   }
-  .restaurant i {
-    margin-left: 15em;
+  .restaurant-carte__description i {
+    margin-left: 9.5em;
   }
 
   footer h3 {

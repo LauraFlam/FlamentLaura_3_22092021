@@ -121,17 +121,22 @@ header{
         flex-direction: column;
         padding-left: 0.7em;
         padding-bottom: 0.5em;
-        h3 {
-            margin: 0;
-        }
         i {
             position: relative;
-            margin-left: 17em;
-            bottom: 1.2em;
+            margin-left: 12em;
+            bottom: 0.6em;
+            font-size: 1.5em;
         }
         p{
             margin-top: 0;
+            line-height: 10%;
         }
+    }
+    &__titre1{
+        margin: 0;
+    }
+    &__titre2{
+        margin-bottom: 0;
     }
     a {
         text-decoration: none;
@@ -159,6 +164,7 @@ footer {
     }
 }
 
+/* Responsive tablette */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
 
     header{
@@ -195,6 +201,11 @@ footer {
         }
         &-carte {
             width: 45%;
+            &__description{
+                i {
+                    margin-left: 11em;
+                }
+            }
         }
     }
     
@@ -204,6 +215,7 @@ footer {
 
 }
 
+/* Responsive desktop */
 @media only screen and (min-width: 1025px) {
 
     header{
@@ -242,9 +254,11 @@ footer {
             &__nouveau{
                 right: -12em;
             }
-        }
-        i{
-            margin-left: 15em;
+            &__description{
+                i {
+                    margin-left: 9.5em;
+                }
+            }
         }
     } 
 
