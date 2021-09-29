@@ -53,7 +53,6 @@ header{
 }
 
 /* Fonctionnement */
-
 .fonctionnement{
     padding: 30px 0px 40px 15px;
     &__point{
@@ -161,7 +160,13 @@ footer {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    
+
+    header{
+        img{
+            width: 35%;
+        }
+    }
+
     .presentation{
         button{
             width: 35%;
@@ -175,7 +180,6 @@ footer {
             margin-left: 5em;
         }
         &__number{
-            position: relative;
             right: 18.2em;
         }
         i{
@@ -198,4 +202,60 @@ footer {
         text-align: center;
     }
 
+}
+
+@media only screen and (min-width: 1025px) {
+
+    header{
+        img{
+            width: 25%;
+        }
+    }
+
+    .presentation{
+        button{
+            width: 22%;
+        }
+    }
+
+    .fonctionnement{
+        text-align: center;
+        &__point {
+            width: 50%;
+            margin-left: 19em;
+        }
+        &__number{
+            right: 20.8em;
+        }
+        i{
+            margin-left: 0;
+        }
+    }
+
+    .restaurant{
+        &-bloc {
+            display: flex;
+            justify-content: space-around;
+        }
+        &-carte {
+            width: 22%;
+            &__nouveau{
+                right: -12em;
+            }
+        }
+        i{
+            margin-left: 15em;
+        }
+    } 
+
+    footer{
+        h3{
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            margin: 3em;
+        }
+    }
 }

@@ -160,6 +160,10 @@ footer i {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header img {
+    width: 35%;
+  }
+
   .presentation button {
     width: 35%;
   }
@@ -172,7 +176,6 @@ footer i {
     margin-left: 5em;
   }
   .fonctionnement__number {
-    position: relative;
     right: 18.2em;
   }
   .fonctionnement i {
@@ -190,6 +193,52 @@ footer i {
 
   footer {
     text-align: center;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  header img {
+    width: 25%;
+  }
+
+  .presentation button {
+    width: 22%;
+  }
+
+  .fonctionnement {
+    text-align: center;
+  }
+  .fonctionnement__point {
+    width: 50%;
+    margin-left: 19em;
+  }
+  .fonctionnement__number {
+    right: 20.8em;
+  }
+  .fonctionnement i {
+    margin-left: 0;
+  }
+
+  .restaurant-bloc {
+    display: flex;
+    justify-content: space-around;
+  }
+  .restaurant-carte {
+    width: 22%;
+  }
+  .restaurant-carte__nouveau {
+    right: -12em;
+  }
+  .restaurant i {
+    margin-left: 15em;
+  }
+
+  footer h3 {
+    text-align: center;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 3em;
   }
 }
 
