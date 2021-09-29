@@ -4,6 +4,7 @@ body {
   font-family: "Roboto";
 }
 
+/* Page d'acceuil */
 /* Header */
 header {
   text-align: center;
@@ -80,7 +81,7 @@ header img {
   color: white;
   position: relative;
   top: 18px;
-  left: -21px;
+  right: 21px;
 }
 .fonctionnement i {
   color: grey;
@@ -156,6 +157,40 @@ footer ul {
 footer i {
   margin-right: 1em;
   font-size: 0.6em;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .presentation button {
+    width: 35%;
+  }
+
+  .fonctionnement {
+    text-align: center;
+  }
+  .fonctionnement__point {
+    width: 75%;
+    margin-left: 5em;
+  }
+  .fonctionnement__number {
+    position: relative;
+    right: 18.2em;
+  }
+  .fonctionnement i {
+    margin-left: 0;
+  }
+
+  .restaurant-bloc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .restaurant-carte {
+    width: 45%;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
