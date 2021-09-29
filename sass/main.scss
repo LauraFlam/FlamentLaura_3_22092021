@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    font-family: 'Roboto';
+}
+
 /* Header */
 header{
     text-align: center;
@@ -35,6 +40,15 @@ header{
             padding-right: 1.5em;
             color: rgb(104, 102, 102);
         }
+    }
+    button{
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+        border: none;
+        color: white;
+        padding: 1em;
+        border-radius: 23px;
+        box-shadow: 0px 1px 7px 4px lightgrey;
+        width: 55%;
     }
 }
 
@@ -131,9 +145,18 @@ header{
 footer {
     background-color: rgb(53, 53, 53);
     color: white;
-    padding: 2px 0px 7px 15px;
-    ul {
+    padding: 0.5em 1em 1em 1.3em;
+    h3 {
+        font-family: 'Shrikhand';
+        font-weight: normal;
+    }
+    ul{
         list-style: none;
-        padding: 0;
+        padding-left: 0;
+        line-height: 155%;
+    }
+    i{
+        margin-right: 1em;
+        font-size: 0.6em;
     }
 }
