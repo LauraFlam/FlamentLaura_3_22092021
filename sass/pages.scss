@@ -42,3 +42,29 @@
         font-size: 1.5em;
     }
 }
+
+.menu__choix {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 0px 10px lightgrey;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+.menu__choix-description{
+    font-size: 0.9em;
+}
+.bouton {
+    text-align: center;
+    button{
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border: none;
+    color: white;
+    padding: 1em;
+    border-radius: 23px;
+    box-shadow: 0px 1px 7px 4px lightgrey;
+    width: 55%;
+    }
+}
