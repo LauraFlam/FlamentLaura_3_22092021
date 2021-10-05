@@ -1,10 +1,12 @@
+@import "pages.scss";
+
 body{
     margin: 0;
     font-family: 'Roboto';
 }
 /* Page d'acceuil */
 /* Header */
-header{
+.header-acceuil{
     text-align: center;
     padding: 2em 0em 1em 0em;
     img{
