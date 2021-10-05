@@ -162,6 +162,10 @@ footer {
         margin-right: 1em;
         font-size: 0.6em;
     }
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 /* Responsive tablette */
@@ -231,13 +235,19 @@ footer {
     }
 
     .fonctionnement{
-        text-align: center;
+        &-bloc {
+            display: flex;
+            justify-content: space-around;
+        }
         &__point {
-            width: 50%;
-            margin-left: 19em;
+            text-align: center;
+            width: 29%;
         }
         &__number{
-            right: 20.8em;
+            right: 12.3em;
+        }
+        h2 {
+            text-align: center;
         }
         i{
             margin-left: 0;
