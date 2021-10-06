@@ -25,7 +25,7 @@
   background-color: #f6f6f6;
   position: relative;
   margin-top: -3.7em;
-  padding: 1em;
+  padding: 1em 1em 3em 1em;
   border-top-left-radius: 2.8em;
   border-top-right-radius: 2.8em;
 }
@@ -54,13 +54,19 @@
   margin-bottom: 1em;
   padding: 0 1em;
 }
-
 .menu__choix-description {
+  font-size: 0.9em;
+  line-height: 55%;
+}
+.menu__choix-prix {
+  margin-top: 1.5em;
+  font-weight: bold;
   font-size: 0.9em;
 }
 
 .bouton {
   text-align: center;
+  margin-top: 2.5em;
 }
 .bouton button {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -72,6 +78,86 @@
   width: 55%;
 }
 
+/* Responsive tablette */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .header-menu img {
+    width: 220px;
+    padding-left: 15em;
+  }
+  .header-menu i {
+    font-size: 1.7em;
+  }
+
+  .restaurant__titre {
+    font-size: 1.8em;
+  }
+
+  .restaurant-contenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .restaurant-partie {
+    width: 45%;
+    margin: 0.6em;
+  }
+  .restaurant-partie h2 {
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .bouton {
+    margin-top: 1.5em;
+  }
+  .bouton button {
+    width: 40%;
+  }
+}
+/* Responsive desktop */
+@media only screen and (min-width: 1025px) {
+  .header-menu img {
+    width: 30%;
+    padding-left: 26em;
+  }
+  .header-menu i {
+    font-size: 2.5em;
+  }
+
+  .restaurant-menu {
+    position: relative;
+    margin-top: -2.2em;
+  }
+
+  .restaurant__titre {
+    font-size: 1.5em;
+  }
+  .restaurant__titre h1 {
+    margin-left: 8.5em;
+  }
+  .restaurant__titre i {
+    margin-right: -2em;
+  }
+
+  .restaurant-contenu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .restaurant-partie {
+    width: 30%;
+  }
+  .restaurant-partie h2 {
+    font-weight: normal;
+  }
+
+  .bouton {
+    margin-top: 1.5em;
+  }
+  .bouton button {
+    width: 33%;
+  }
+}
 body {
   margin: 0;
   font-family: "Roboto";
@@ -243,7 +329,7 @@ footer a {
 
 /* Responsive tablette */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  header img {
+  .header-acceuil img {
     width: 35%;
   }
 
@@ -283,7 +369,7 @@ footer a {
 }
 /* Responsive desktop */
 @media only screen and (min-width: 1025px) {
-  header img {
+  .header-acceuil img {
     width: 25%;
   }
 

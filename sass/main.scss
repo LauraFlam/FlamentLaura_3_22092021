@@ -174,7 +174,7 @@ footer {
 /* Responsive tablette */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
 
-    header{
+    .header-acceuil{
         img{
             width: 35%;
         }
@@ -225,7 +225,7 @@ footer {
 /* Responsive desktop */
 @media only screen and (min-width: 1025px) {
 
-    header{
+    .header-acceuil{
         img{
             width: 25%;
         }
