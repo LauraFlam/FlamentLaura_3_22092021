@@ -10,7 +10,7 @@ $size: 80px;
     height: $size;
     position: fixed;
     visibility: hidden;
-    animation: spinner 4s linear;
+    animation: spinner 3s linear;
 
   span {
     position: absolute;
@@ -61,4 +61,36 @@ $size: 80px;
     100% {
         opacity: 1;
     }
+}
+
+/*Animation coeur */
+.full {
+  opacity: 0;
+  position: absolute;
+  font-size: 1.5rem;
+  background: linear-gradient(#9656dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.empty{
+  opacity: 1;
+  position: absolute;
+  font-size: 1.5rem;
+}
+.full:hover{
+  animation: myfull 1s;
+}
+@keyframes myfull{
+  from {opacity:0;
+  }
+  to {opacity: 1;
+  }
+}
+.empty:hover{
+  animation: myempty 1s;
+}
+@keyframes myempty{
+  from {opacity:1;}
+  to {opacity: 0;}
 }

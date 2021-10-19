@@ -125,11 +125,10 @@ body{
         flex-direction: column;
         padding-left: 0.7em;
         padding-bottom: 0.5em;
-        i {
+        .heart {
             position: relative;
-            margin-left: 12em;
-            bottom: 0.6em;
-            font-size: 1.5em;
+            left: 17em;
+            top: -1em;
         }
         p{
             margin-top: 0;
@@ -210,8 +209,9 @@ footer {
         &-carte {
             width: 45%;
             &__description{
-                i {
-                    margin-left: 11em;
+                .heart {
+                    left: 17em;
+                    top: -1em;
                 }
             }
         }
@@ -269,8 +269,9 @@ footer {
                 right: -12em;
             }
             &__description{
-                i {
-                    margin-left: 9.5em;
+                .heart {
+                    left: 14em;
+                    top: -1em;
                 }
             }
         }
