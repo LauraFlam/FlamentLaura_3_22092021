@@ -29,6 +29,12 @@
     border-top-left-radius: 2.8em;
     border-top-right-radius: 2.8em;
 }
+.green-underline{
+    border-top: solid 3px #99e2d0;
+    width: 18%;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
 .restaurant__titre {
     display: flex;
     justify-content: space-around;
@@ -96,7 +102,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        .green-underline {
+            width: 100%;
+        }
     }
+
     .restaurant-partie {
         width: 45%;
         margin: 0.6em;
@@ -140,6 +150,9 @@
     .restaurant-contenu{
         display: flex;
         justify-content: space-around;
+        .green-underline {
+            width: 15%;
+        }
     }
     .restaurant-partie {
         width: 30%;
