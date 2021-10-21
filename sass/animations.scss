@@ -1,6 +1,6 @@
 $spinner: #9356DC ;
 $background:white;
-$size: 80px;
+$size: 100px;
 
 
 .spinner {
@@ -40,12 +40,10 @@ $size: 80px;
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
     visibility: visible;
     }
   100% {
     transform: rotate(1300deg);
-    opacity: 0;
     visibility: hidden;
     }
 }
@@ -78,17 +76,17 @@ $size: 80px;
   position: absolute;
   font-size: 1.5rem;
 }
+
 .full:hover{
-  animation: myfull 1s;
+  animation: myfull 1s forwards;
 }
 @keyframes myfull{
-  from {opacity:0;
-  }
-  to {opacity: 1;
-  }
+  from {opacity:0;}
+  to {opacity: 1;}
 }
+
 .empty:hover{
-  animation: myempty 1s;
+  animation: myempty 1s forwards;
 }
 @keyframes myempty{
   from {opacity:1;}

@@ -61,6 +61,7 @@
   border-radius: 1em;
   margin-bottom: 1em;
   padding: 0 1em;
+  opacity: 0;
 }
 .menu__choix-description {
   font-size: 0.9em;
@@ -70,6 +71,30 @@
   margin-top: 1.5em;
   font-weight: bold;
   font-size: 0.9em;
+}
+@keyframes apparition {
+  0% {
+    transform: translateY(20px);
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menu__choix:nth-of-type(1) {
+  animation: apparition 800ms 200ms forwards;
+}
+.menu__choix:nth-of-type(2) {
+  animation: apparition 800ms 400ms forwards;
+}
+.menu__choix:nth-of-type(3) {
+  animation: apparition 800ms 600ms forwards;
+}
+.menu__choix:nth-of-type(4) {
+  animation: apparition 800ms 800ms forwards;
 }
 
 .bouton {
@@ -173,10 +198,10 @@
   }
 }
 .spinner {
-  top: calc(50% - 40px);
-  left: calc(50% - 40px);
-  width: 80px;
-  height: 80px;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
   position: fixed;
   visibility: hidden;
   animation: spinner 3s linear;
@@ -194,22 +219,20 @@
   background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, white 100%);
 }
 .spinner .spinner-inner-3 {
-  top: 8px;
-  left: 8px;
-  width: 64px;
-  height: 64px;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
   background: white;
 }
 
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
     visibility: visible;
   }
   100% {
     transform: rotate(1300deg);
-    opacity: 0;
     visibility: hidden;
   }
 }
@@ -243,7 +266,7 @@
 }
 
 .full:hover {
-  animation: myfull 1s;
+  animation: myfull 1s forwards;
 }
 
 @keyframes myfull {
@@ -255,7 +278,7 @@
   }
 }
 .empty:hover {
-  animation: myempty 1s;
+  animation: myempty 1s forwards;
 }
 
 @keyframes myempty {
