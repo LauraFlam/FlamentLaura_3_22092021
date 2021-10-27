@@ -104,11 +104,30 @@
 .bouton button {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border: none;
+  position: relative;
   color: white;
   padding: 1em;
-  border-radius: 23px;
-  box-shadow: 0px 1px 7px 4px lightgrey;
+  border-radius: 1.4em;
+  box-shadow: 0px 3px 5px 3px lightgrey;
   width: 55%;
+  z-index: 1;
+}
+.bouton button:hover::after {
+  opacity: 1;
+}
+.bouton button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 1.4em;
+  background: linear-gradient(#ff88de, #a674e2);
+  box-shadow: 0px 8px 7px 1px lightgrey;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms ease-in-out;
 }
 
 /* Responsive tablette */
@@ -337,11 +356,30 @@ body {
 .presentation button {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border: none;
+  position: relative;
   color: white;
   padding: 1em;
-  border-radius: 23px;
-  box-shadow: 0px 1px 7px 4px lightgrey;
+  border-radius: 1.4em;
+  box-shadow: 0px 3px 5px 3px lightgrey;
   width: 55%;
+  z-index: 1;
+}
+.presentation button:hover::after {
+  opacity: 1;
+}
+.presentation button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 1.4em;
+  background: linear-gradient(#ff88de, #a674e2);
+  box-shadow: 0px 8px 7px 1px lightgrey;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms ease-in-out;
 }
 
 /* Fonctionnement */
