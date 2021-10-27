@@ -1,3 +1,4 @@
+/*Animation loader */
 $spinner: #9356DC ;
 $background:white;
 $size: 100px;
@@ -91,4 +92,44 @@ $size: 100px;
 @keyframes myempty{
   from {opacity:1;}
   to {opacity: 0;}
+}
+
+/* Animation Coche */
+.menu{
+  &__coche{
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease-out 150ms;
+    margin-right: -60px;
+      i{
+        background-color: white;
+        padding: 5px 4px 3px 4px;
+        border-radius: 1.4em;
+        color: #99E2D0;
+      }
+    }
+    &__choix{
+      &:hover{
+        .menu__coche{
+          margin-right: 0;
+            i{
+              animation: coche-rotation 550ms 180ms ease-out;
+            }
+        }
+      }
+    }
+}
+
+@keyframes coche-rotation {
+  0% {
+      transform: rotate(-360deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
 }
