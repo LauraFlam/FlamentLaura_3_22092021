@@ -65,12 +65,23 @@
   opacity: 0;
 }
 .menu__choix-description {
-  width: 80%;
+  width: 78%;
   font-size: 0.9em;
   line-height: 55%;
-  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__choix-description p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 10px;
+  padding: 2px 0;
+}
+.menu__choix-description:hover {
+  cursor: pointer;
+  width: 60%;
+  text-overflow: ellipsis;
 }
 .menu__choix-prix {
   align-self: flex-end;
@@ -293,7 +304,7 @@
 }
 
 .full:hover {
-  animation: myfull 1s forwards;
+  animation: myfull 800ms forwards;
 }
 
 @keyframes myfull {
@@ -305,7 +316,7 @@
   }
 }
 .empty:hover {
-  animation: myempty 1s forwards;
+  animation: myempty 800ms forwards;
 }
 
 @keyframes myempty {
@@ -343,7 +354,7 @@
 
 @keyframes coche-rotation {
   0% {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
   100% {
     transform: rotate(0deg);

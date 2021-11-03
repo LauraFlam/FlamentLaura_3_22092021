@@ -79,7 +79,7 @@ $size: 100px;
 }
 
 .full:hover{
-  animation: myfull 1s forwards;
+  animation: myfull 800ms forwards;
 }
 @keyframes myfull{
   from {opacity:0;}
@@ -87,7 +87,7 @@ $size: 100px;
 }
 
 .empty:hover{
-  animation: myempty 1s forwards;
+  animation: myempty 800ms forwards;
 }
 @keyframes myempty{
   from {opacity:1;}
@@ -127,7 +127,7 @@ $size: 100px;
 
 @keyframes coche-rotation {
   0% {
-      transform: rotate(-360deg);
+      transform: rotate(360deg);
   }
   100% {
       transform: rotate(0deg);
