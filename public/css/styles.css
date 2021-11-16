@@ -76,6 +76,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.menu__choix-description h3 {
+  font-size: 1.1em;
+}
 .menu__choix-description p {
   text-overflow: ellipsis;
   overflow: hidden;
